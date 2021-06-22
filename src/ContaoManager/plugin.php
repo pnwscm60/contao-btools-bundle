@@ -6,7 +6,7 @@
  *
  * @license LGPL-3.0-or-later
  */
-namespace Pnwscm60\PbtimeBundle\ContaoManager;
+namespace Pnwscm60\BtoolsBundle\ContaoManager;
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -16,7 +16,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('Pnwscm60\PbtimeBundle\Pnwscm60PbtimeBundle')
+            BundleConfig::create('Pnwscm60\BtoolsBundle\Pnwscm60BtoolsBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
                 ->setReplace(['concerto']),
         ];
