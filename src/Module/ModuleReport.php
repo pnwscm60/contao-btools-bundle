@@ -1,5 +1,5 @@
 <?php
-namespace Pnwscm60\PbtimeBundle\Module;
+namespace Pnwscm60\BtoolsBundle\Module;
 class ModuleReport extends \Contao\Module
 {
 	/**
