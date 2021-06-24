@@ -64,7 +64,7 @@ $GLOBALS['TL_DCA']['tl_inrec'] = array
 			),
 			/*'toggle' => array
 			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_costrec']['toggle'],
+				'label'               => &$GLOBALS['TL_LANG']['tl_inrec']['toggle'],
 				'icon'                => 'visible.gif',
 				'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
 				'button_callback'     => array('tl_costrec', 'toggleIcon')
