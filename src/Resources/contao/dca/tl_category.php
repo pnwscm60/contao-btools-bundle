@@ -1,8 +1,8 @@
 <?php
 
 /**
-DCA für Pbtime: category
-© 2019 Markus Schenker, Phi Network
+DCA für btools: category
+© 2021 Markus Schenker, Phi Network
  */
 
 
@@ -90,7 +90,12 @@ $GLOBALS['TL_DCA']['tl_category'] = array
 		),
 		'tstamp' => array
 		(
-			'sql'                     => "int(10) unsigned NOT NULL default '0'"
+			'sql'                     => "timestamp NOT NULL default CURRENT_TIMESTAMP"
+		),
+		// id_member
+		'memberid'     => array
+		(
+			'sql' => "int(10) unsigned NOT NULL default '0'"
 		),
 		'title' => array
 		(
@@ -115,7 +120,12 @@ $GLOBALS['TL_DCA']['tl_category'] = array
 			'eval'                    => array('mandatory'=>false, 'maxlength'=>255, 'tl_class'=>'w50'),
 			'sql'                     => "varchar(255) NOT NULL default ''"
 		),
-			'typ'     => array
+		// standard oder special
+		'typ'     => array
+		(
+			'sql' => "int(1) unsigned NOT NULL default '0'"
+		),
+		'active'     => array
 		(
 			'sql' => "int(1) unsigned NOT NULL default '0'"
 		),
