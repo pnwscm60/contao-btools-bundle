@@ -18,7 +18,7 @@ class Plugin implements BundlePluginInterface
         return [
             BundleConfig::create('Pnwscm60\BtoolsBundle\Pnwscm60BtoolsBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
-                ->setReplace(['concerto']),
+                ->setReplace(['btools']),
         ];
     }
 }
