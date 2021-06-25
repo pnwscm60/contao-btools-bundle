@@ -1,19 +1,19 @@
 <?php
 namespace Pnwscm60\BtoolsBundle\Module;
-class ModuleErfassen extends \Contao\Module
+class ModuleEntry extends \Contao\Module
 {
 	/**
 	 * Template
 	 * @var string
 	 */
-	protected $strTemplate = 'mod_erfassen';
+	protected $strTemplate = 'mod_entry';
  
 	public function generate()
     {
         if (TL_MODE == 'BE')
         {
             $objTemplate = new \BackendTemplate('be_wildcard');
-            $objTemplate->wildcard = '### ERFASSEN ###';
+            $objTemplate->wildcard = '### ENTRY ###';
             $objTemplate->project = $this->headline;
             return $objTemplate->parse();
 		}
