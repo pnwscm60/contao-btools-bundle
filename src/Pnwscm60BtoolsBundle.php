@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of Pbtime.
+ * This file is part of Btools.
  *
  * (c) 2019 Markus Schenker
  *
